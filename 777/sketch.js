@@ -44,7 +44,7 @@ function mousePressed() {
 }
 
 function setButton(label, pos) {
-    const button = createButton(label);
+    const button = createButton('aaaaa');
     button.size(100, 30);
     button.position(pos.x, pos.y);
     return button;
