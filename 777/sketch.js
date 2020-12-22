@@ -6,7 +6,7 @@ function preload() {
 
     // このブラウザがmp3をサポートしない場合、
     // loadSound()は、スケッチに含めておいたoggファイルを読み込む
-    song = loadSound('greeting-01.mp3');
+    song = loadSound('ohayou.mp3');
 }
 
 function setup() {
