@@ -2,7 +2,7 @@ let song;
 let isUserStarted = false;
 
 function preload() {
-    song = loadSound('assets/lucky_dragons_-_power_melody.mp3');
+    song = loadSound('ohayou.mp3');
 }
 
 function setup() {
