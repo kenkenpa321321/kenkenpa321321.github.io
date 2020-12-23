@@ -1,51 +1,39 @@
 let song;
+let isUserStarted = false;
 
 function preload() {
-    // サウンド形式に.oggファイルと.mp3ファイル両方を含める
-    soundFormats('ogg', 'mp3');
-
-    // このブラウザがmp3をサポートしない場合、
-    // loadSound()は、スケッチに含めておいたoggファイルを読み込む
-    song = loadSound('ohayou.mp3');
+    song = loadSound('assets/lucky_dragons_-_power_melody.mp3');
 }
 
 function setup() {
-    createCanvas(710, 200);
+    const canvas = createCanvas(710, 200);
+    // キャンバスのマウスプレスでtogglePlay()を呼び出す
+    canvas.mousePressed(togglePlay);
+    // 無音時は緑
     background(0, 255, 0);
-
-    // ボタン
-    const button = setButton('PLAY', {
-        x: 40,
-        y: 180
-    });
-
-    button.mousePressed(() => {
-        // 再生中なら
-        if (song.isPlaying()) {
-            // 一時停止
-            song.pause();
-            // ボタンのラベルを変更
-            button.html('PLAY');
-            // 背景色を変更
-            background(255, 0, 0);
-            // 再生中でないなら
-        }
-        else {
-            // 再生
-            song.play();
-            button.html('PAUSE');
-            background(0, 255, 0);
-        }
-    });
 }
 
-function mousePressed() {
-    // サンプルから変更
+// マウスプレスで再生/一時停止を切り替える
+function togglePlay() {
+    print('mouse');
+    if (!song.isPlaying()) {
+        // .play()は.pause()位置から再開する
+        song.play();
+        // 再生中は赤
+        background(255, 0, 0);
+    }
+    else {
+        song.pause();
+        // 無音時は赤
+        background(0, 255, 0);
+    }
 }
 
-function setButton(label, pos) {
-    const button = createButton('aaaaa');
-    button.size(100, 30);
-    button.position(pos.x, pos.y);
-    return button;
+function touchStarted() {
+    if (!isUserStarted) {
+        // touchStarted()を1回だけ呼び出されるようにする
+        print('touch');
+        userStartAudio();
+        isUserStarted = true;
+    }
 }
