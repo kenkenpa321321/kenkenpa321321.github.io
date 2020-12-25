@@ -1,3 +1,32 @@
+// タッチイベントに対応している
+if(window.TouchEvent){
+
+	// イベントリスナーに対応している
+	if(window.addEventListener){
+
+		// ------------------------------------------------------------
+		// タッチすると実行される関数
+		// ------------------------------------------------------------
+		function TouchEventFunc(e){
+			// デフォルトのタッチ操作をキャンセルする
+			e.preventDefault();
+		}
+
+
+		// ------------------------------------------------------------
+		// リッスンを開始する
+		// ------------------------------------------------------------
+		// タッチを開始すると実行されるイベント
+		document.addEventListener("touchstart",TouchEventFunc);
+
+		// タッチしたまま平行移動すると実行されるイベント
+		document.addEventListener("touchmove",TouchEventFunc);
+
+		// タッチを終了すると実行されるイベント
+		document.addEventListener("touchend",TouchEventFunc);
+
+	}
+}
 let song;
 let isUserStarted = false;
 
