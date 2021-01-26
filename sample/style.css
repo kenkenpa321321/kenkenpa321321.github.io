@@ -1,6 +1,6 @@
 .mainview{...}
 
 p.touch_action_none{
-  padding: 5000px 0;
+  padding: 500px 500;
   touch-action: none;
 }
