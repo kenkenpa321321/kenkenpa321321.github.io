@@ -1,3 +1,5 @@
+.mainview{...}
+
 p.touch_action_none{
   padding: 30px 0;
   touch-action: none;
