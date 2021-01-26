@@ -1,6 +1,7 @@
-.mainview{...}
+// スクロールを無効にする
+$(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+});
 
-p.touch_action_none{
-  padding: 30px 0;
-  touch-action: none;
-}
+// スクロール無効を解除する
+$(window).off('.noScroll');
