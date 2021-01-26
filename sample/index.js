@@ -1,12 +1,6 @@
-// スクロール禁止
-function no_scroll() {
-    // PCでのスクロール禁止
-    document.addEventListener("mousewheel", scroll_control, { passive: false });
-    // スマホでのタッチ操作でのスクロール禁止
-    document.addEventListener("touchmove", scroll_control, { passive: false });
-}
+html,body{
+    overflow: hidden;
 
-// スクロール関連メソッド
-function scroll_control(event) {
-    event.preventDefault();
-}
+$(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+});
