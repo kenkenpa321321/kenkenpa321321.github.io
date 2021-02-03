@@ -1,3 +1,4 @@
+
 @charset "UTF-8" ;
 
 
@@ -7,22 +8,19 @@
 	display: block ;
 
 	width: 90% ;
-	max-width: 250px ;
-	margin: 8px ;
-	padding: 18px 0 ;
+	max-width: 100px ;
+	margin: 15px ;
+	padding: 30px 0 ;
 	border-radius: 4px ;
 
-	color: #fff ;
+	color: rgb(255, 255, 255) ;
 	font-weight: 700 ;
 	background: #D36015 ;
 	text-align: center ;
 	text-decoration: none ;
 }
 
-.stop-button
-{
-	background: #777 ;
-}
+
 body {
 	touch-action: none;
 }
