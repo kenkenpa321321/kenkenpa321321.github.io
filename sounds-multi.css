@@ -32,10 +32,6 @@
   font-size: 64px;
   text-align: center;
 }
-.flex,
-.flex > *{
-  border: 3px solid #aaa;
-}
 
 body {
 	touch-action: none;
