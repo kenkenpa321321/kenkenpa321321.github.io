@@ -51,6 +51,11 @@ var syncerSounds = {
 			// 音声ファイルを再生[play()]する
 			document.getElementById( file ).play() ;
 
+			if(file ==="kan"){document.area1.src = "images/ue.jpg"}
+			if(file ==="ice"){document.area1.src = "images/sita.jpg"}
+			if(file ==="soda"){document.area1.src = "images/migi.jpg"}
+			if(file ==="wave"){document.area1.src = "images/hidari.jpg"}
+
 			// 最近再生した音声としてセット
 			syncerSounds.currentTime = file ;
 
@@ -82,3 +87,4 @@ var syncerSounds = {
 	
 
 })() ;
+
