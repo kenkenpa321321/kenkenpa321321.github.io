@@ -2,8 +2,7 @@
 @charset "UTF-8" ;
 
 
-.sounds ,
-.stop-button
+.sounds 
 {
 	display: block ;
 
@@ -19,6 +18,24 @@
 	text-align: center ;
 	text-decoration: none ;
 }
+
+.sounds2
+{
+	display: block ;
+
+	width: 90% ;
+	max-width: 120px ;
+	margin: 15px ;
+	padding: 30px 0 ;
+	border-radius: 4px ;
+
+	color: rgb(255, 255, 255) ;
+	font-weight: 500 ;
+	background: #d33b15 ;
+	text-align: center ;
+	text-decoration: none ;
+}
+
 .flex{
 	padding: 2.5% 0;
 	display: flex;
