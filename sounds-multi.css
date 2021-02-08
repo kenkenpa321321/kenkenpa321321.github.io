@@ -1,7 +1,9 @@
-
 @charset "UTF-8" ;
 
 
+.class1{
+	text-align: center;
+}
 .sounds 
 {
 	display: block ;
@@ -14,7 +16,7 @@
 
 	color: rgb(255, 255, 255) ;
 	font-weight: 500 ;
-	background: #1518d3 ;
+	background: #31e968 ;
 	text-align: center ;
 	text-decoration: none ;
 }
@@ -31,7 +33,41 @@
 
 	color: rgb(255, 255, 255) ;
 	font-weight: 500 ;
-	background: #d33b15 ;
+	background: #eb7514 ;
+	text-align: center ;
+	text-decoration: none ;
+}
+
+.sounds3
+{
+	display: block ;
+
+	width: 90% ;
+	max-width: 120px ;
+	margin: 15px ;
+	padding: 30px 0 ;
+	border-radius: 4px ;
+
+	color: rgb(255, 255, 255) ;
+	font-weight: 500 ;
+	background: #306cec ;
+	text-align: center ;
+	text-decoration: none ;
+}
+
+.sounds4
+{
+	display: block ;
+
+	width: 90% ;
+	max-width: 120px ;
+	margin: 15px ;
+	padding: 30px 0 ;
+	border-radius: 4px ;
+
+	color: rgb(255, 255, 255) ;
+	font-weight: 500 ;
+	background: #fa0000 ;
 	text-align: center ;
 	text-decoration: none ;
 }
