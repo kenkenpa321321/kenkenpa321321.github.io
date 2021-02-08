@@ -8,7 +8,7 @@ var syncerSounds = {
 (function()
 {
 	// 設定
-	var setClass = 'sounds' ;							// ボタン要素のクラス名
+	var setClass = 'sounds'   ;							// ボタン要素のクラス名
 	var setDir = './' ;									// 音声ファイルがあるフォルダ(最後は[/])
 	var setStopButtonId = 'stop-button-syncer' ;			// 停止ボタンに付けるID
 
@@ -54,8 +54,20 @@ var syncerSounds = {
 			if(file ==="kan"){document.area1.src = "images/ue.jpg"}
 			if(file ==="ice"){document.area1.src = "images/sita.jpg"}
 			if(file ==="soda"){document.area1.src = "images/migi.jpg"}
-			if(file ==="wave"){document.area1.src = "images/hidari.jpg"}
-
+			if(file ==="wave"){document.area1.src = "images/ue.jpg"}
+			if(file ==="fastener"){document.area1.src = "images/sita.jpg"}
+			if(file ==="pet"){document.area1.src = "images/hidari.jpg"}
+			if(file ==="spray"){document.area1.src = "images/ue.jpg"}
+			if(file ==="tomato"){document.area1.src = "images/sita.jpg"}
+			if(file ==="rain"){document.area1.src = "images/migi.jpg"}
+			if(file ==="huurin"){document.area1.src = "images/migi.jpg"}
+			if(file ==="suiteki"){document.area1.src = "images/ue.jpg"}
+			if(file ==="iki"){document.area1.src = "images/migi.jpg"}
+			if(file ==="potato"){document.area1.src = "images/sita.jpg"}
+			if(file ==="egg"){document.area1.src = "images/hidari.jpg"}
+			if(file ==="patipati"){document.area1.src = "images/migi.jpg"}
+			if(file ==="men"){document.area1.src = "images/hidari.jpg"}
+		
 			// 最近再生した音声としてセット
 			syncerSounds.currentTime = file ;
 
