@@ -314,3 +314,27 @@ var syncerSounds = {
 	
 
 })() ;
+
+// 要素を取得
+var aElement = document.getElementById( "target" ) ;
+
+// 処理を定義
+var action = function() {
+	// 処理内容
+}
+
+// イベントを設定 ( addEventListener )
+aElement.addEventListener( "click", action ) ;
+
+// イベントを削除
+aElement.removeEventListener( "click", action ) ;
+// 要素を取得
+var aElement = document.getElementById( "target" ) ;
+
+// イベントを設定 ( onclick )
+aElement.onclick = function() {
+	// 処理内容
+}
+
+// イベントを削除
+aElement.onclick = null ;
